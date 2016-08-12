@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:meterial="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        >
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:lines="1"
+            android:id="@+id/et_register_account"
+            android:padding="10dp"
+            meterial:met_baseColor="#0056d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入账号"
+            meterial:met_primaryColor="@android:color/holo_blue_dark"
+            meterial:met_floatingLabel="highlight"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:lines="1"
+            android:id="@+id/et_register_pass1"
+            android:padding="10dp"
+            meterial:met_baseColor="#0056d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:password="true"
+            meterial:met_minCharacters="6"
+            meterial:met_maxCharacters="20"
+            meterial:met_primaryColor="@android:color/holo_blue_dark"
+            meterial:met_floatingLabel="highlight"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:lines="1"
+            android:padding="10dp"
+            meterial:met_baseColor="#0056d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请再次输入密码"
+            android:password="true"
+            meterial:met_minCharacters="6"
+            meterial:met_maxCharacters="20"
+            meterial:met_primaryColor="@android:color/holo_blue_dark"
+            meterial:met_floatingLabel="highlight"
+            android:id="@+id/et_register_pass2"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark">
+            <com.fourfive.subwayticket.mymaterialbuttons.FlatButton
+                android:onClick="bt_register_submit"
+                android:id="@+id/bt_register_submit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="提   交"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

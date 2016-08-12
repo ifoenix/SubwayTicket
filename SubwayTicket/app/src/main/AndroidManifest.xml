@@ -30,6 +30,12 @@
         <activity android:name=".view.SettingsActivity"></activity>
         <activity android:name=".view.SiteActivity"></activity>
         <activity android:name=".view.LineActivity"></activity>
+        <activity android:name=".view.BuyTicketActivity"></activity>
+        <activity android:name=".view.CheckTicketActivity"></activity>
+        <activity android:name=".view.LegalActivity"></activity>
+        <activity android:name=".view.SafetyActivity"></activity>
+        <activity android:name=".view.BusInfomationActivity"></activity>
+
 
     </application>
 

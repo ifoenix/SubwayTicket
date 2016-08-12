@@ -1,19 +1,19 @@
 package android.subwayticket.bean;
 
 /**
- * Created by Zach on 2016/8/11.
+ * Created by Zach on 2016/8/12.
  */
 public class User {
-    private String username;
+    private String userName;
     private String password;
     private String msg;
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -31,4 +31,14 @@ public class User {
     public void setMsg(String msg) {
         this.msg = msg;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", msg='" + msg + '\'' +
+                '}';
+    }
+
 }

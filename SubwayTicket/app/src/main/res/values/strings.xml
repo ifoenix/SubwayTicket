@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SubwayTicket</string>
+    <string name="open">open</string>
+    <string name="close"></string>
 </resources>

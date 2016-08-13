@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_buyticket_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="站点信息"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_buyticket_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="起 点"
+                android:textColor="@android:color/background_light" />
+
+            <View
+
+                android:layout_width="0.5dip"
+                android:layout_height="15dip"
+                android:background="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/tv_buyticket_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="终 点"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

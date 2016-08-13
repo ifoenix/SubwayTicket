@@ -7,8 +7,7 @@ public class User {
     private String userName;
     private String password;
     private String msg;
-    private String abc;
-
+    private String miss;
     public String getUserName() {
         return userName;
     }

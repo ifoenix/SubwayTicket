@@ -17,7 +17,7 @@ import java.util.zip.Inflater;
 /**
  * Created by Zach on 2016/8/13.
  */
-public class NoticeRecyclerAdapter extends RecyclerView.Adapter<NoticeRecyclerAdapter.MyViewHolder> {
+public class  NoticeRecyclerAdapter extends RecyclerView.Adapter<NoticeRecyclerAdapter.MyViewHolder> {
 
     private List<Notice> mNoticeList;
 

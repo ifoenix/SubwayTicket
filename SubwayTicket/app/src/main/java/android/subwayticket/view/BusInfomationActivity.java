@@ -28,20 +28,6 @@ public class BusInfomationActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_businfo);
         Toast.makeText(this, Constant.userID+"",Toast.LENGTH_LONG).show();
-//        ButterKnife.bind(this);
-//
-//        mTopBar.setOnTopBarClickListener(new TopBar.OnTopBarClickListener() {
-//            @Override
-//            public void onTopBarRightClick(View v) {
-//
-//            }
-//
-//            @Override
-//            public void onTopBarLeftClick(View v) {
-//                Intent intent=new Intent(BusInfomationActivity.this,MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
         initView();
         initEvent();

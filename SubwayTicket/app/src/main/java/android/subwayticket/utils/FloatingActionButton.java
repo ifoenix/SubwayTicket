@@ -29,7 +29,7 @@ public class FloatingActionButton extends Button {
 	
 	private int width;
 	private int height;
-	
+
 	private Bitmap icon;
 	private int iconWidth;
 	private int iconHeight;

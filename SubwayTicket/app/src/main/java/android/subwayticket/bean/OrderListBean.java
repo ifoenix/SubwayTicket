@@ -8,6 +8,7 @@ import java.util.List;
  * Created by Zach on 2016/8/10.
  */
 public class OrderListBean {
+
     @SerializedName("Orders")
     private List<Order> orderList;
 

@@ -9,6 +9,6 @@ import rx.Observable;
 /**
  * Created by Zach on 2016/8/13.
  */
-public interface IOrderModel {
+public interface  IOrderModel {
    public  Observable<List<Order>> getOrders();
 }

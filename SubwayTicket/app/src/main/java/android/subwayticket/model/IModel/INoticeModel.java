@@ -11,7 +11,7 @@ import rx.Observable;
 /**
  * Created by Zach on 2016/8/5.
  */
-public interface INoticeModel {
+public interface INoticeModel  {
 
     public Observable<List<Notice>> getNotices();
 

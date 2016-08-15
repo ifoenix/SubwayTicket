@@ -12,4 +12,5 @@ public interface INoticeView {
     void showProgress();
     void hideProgress();
     void showNotices(List<Notice> noticeList);
+
 }

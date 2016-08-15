@@ -10,6 +10,7 @@ import java.util.Date;
  */
 public class Notice implements Serializable{
 
+
     @SerializedName("noticeID")
     private  int noticeID;
     @SerializedName("noticeTitle")

@@ -11,6 +11,5 @@ import retrofit2.http.GET;
  */
 public interface NoticeService {
     @GET("/subwayticket/showAll.do")
-
     Call<NoticeListBean> getNotices();
 }

@@ -22,6 +22,7 @@ import rx.Subscriber;
  */
 public class UserImpl implements IUserModel {
     private static final String TAG="UserImpl";
+
     @Override
     public Observable<User> login(final String userName, final String password) {
        Observable mUserObservable=Observable.create(new Observable.OnSubscribe<User>() {

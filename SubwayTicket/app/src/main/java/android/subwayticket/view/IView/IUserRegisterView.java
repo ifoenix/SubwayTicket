@@ -5,4 +5,5 @@ package android.subwayticket.view.IView;
  */
 public interface IUserRegisterView {
     void register(String userName, String password);
+
 }

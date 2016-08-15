@@ -19,8 +19,7 @@ public class Order implements Serializable{
     @SerializedName("price")
     private float price;
 
-//    @SerializedName("")
-//    private String buyTime;
+
 
     public String getStart() {
         return start;
@@ -54,33 +53,6 @@ public class Order implements Serializable{
         this.price = price;
     }
 
-//    public Date getBuyTime() {
-//        return buyTime;
-//    }
-//
-//    public void setBuyTime(Date buyTime) {
-//        this.buyTime = buyTime;
-//    }
-
-
-//    public Order(String start, String terminal, String orderID, float price, Date buyTime) {
-//        this.start = start;
-//        this.terminal = terminal;
-//        this.orderID = orderID;
-//        this.price = price;
-//        this.buyTime = buyTime;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Order{" +
-//                "start='" + start + '\'' +
-//                ", terminal='" + terminal + '\'' +
-//                ", orderID='" + orderID + '\'' +
-//                ", price=" + price +
-//                ", buyTime=" + buyTime +
-//                '}';
-//    }
 
 
     public Order(int id, String start, String terminal, String orderID, float price) {

@@ -10,6 +10,6 @@ import retrofit2.http.GET;
  */
 public interface OrderService {
     @GET("/subwayticket/ticketRecord.do")
-//    @GET("/Subwayticket03/order.json")
+
     Call<OrderListBean> getOrderInfo();
 }

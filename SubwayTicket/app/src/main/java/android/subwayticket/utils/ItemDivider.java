@@ -11,7 +11,6 @@ import android.view.View;
  * Created by Zach on 2016/8/13.
  */
 public class ItemDivider extends RecyclerView.ItemDecoration {
-
     //默认分割条Drawable资源的id
     private static  final int[] ATTRS={ android.R.attr.listDivider};
 

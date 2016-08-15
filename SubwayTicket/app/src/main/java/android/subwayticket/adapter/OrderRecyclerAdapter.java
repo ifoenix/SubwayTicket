@@ -20,7 +20,7 @@ import cn.smssdk.gui.DefaultContactViewItem;
 /**
  * Created by Zach on 2016/8/13.
  */
-public class OrderRecyclerAdapter extends RecyclerView.Adapter<OrderRecyclerAdapter.MyViewHolder>{
+public class  OrderRecyclerAdapter extends RecyclerView.Adapter<OrderRecyclerAdapter.MyViewHolder>{
 
     private List<Order> mOrderList;
     private Context context;

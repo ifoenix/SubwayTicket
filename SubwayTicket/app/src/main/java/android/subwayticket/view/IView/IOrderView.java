@@ -10,6 +10,5 @@ import java.util.List;
 public interface IOrderView {
 
     void showOrderInfo(List<Order> orderList);
-//    void showProgress();
-//    void hideProgress();
+
 }

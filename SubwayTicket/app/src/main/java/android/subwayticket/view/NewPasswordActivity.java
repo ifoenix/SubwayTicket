@@ -9,7 +9,7 @@ import android.widget.Toast;
 /**
  * Created by Charles on 2016/7/28.
  */
-public class NewPasswordActivity extends AppCompatActivity {
+public class  NewPasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,5 +1,7 @@
 package android.subwayticket.bean;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Zach on 2016/8/12.
  */
@@ -43,7 +45,6 @@ public class User {
                 "userID=" + userID +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", msg='" + msg + '\'' +
                 '}';
     }
 

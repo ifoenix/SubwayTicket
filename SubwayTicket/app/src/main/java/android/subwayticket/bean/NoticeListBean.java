@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Zach on 2016/8/8.
  */
-public class NoticeListBean {
+public class  NoticeListBean {
 
     @SerializedName("Notices")
     private List<Notice> noticeList;

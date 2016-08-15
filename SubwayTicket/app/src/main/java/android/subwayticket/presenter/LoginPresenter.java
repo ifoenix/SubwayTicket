@@ -54,7 +54,7 @@ public class LoginPresenter {
 
                         Toast.makeText(context, user.toString(), Toast.LENGTH_LONG).show();
                         mUserView.login(userName, password);
-//                        mUserView.getUser(user);
+
 
                     }
                 });

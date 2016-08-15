@@ -22,6 +22,7 @@ import rx.Subscriber;
  */
 public class NoticeModelImpl implements INoticeModel {
     private  static final String TAG="NoticeModelImpl";
+
     @Override
     public Observable<List<Notice>> getNotices() {
         Observable mObservable=Observable.create(new Observable.OnSubscribe<List<Notice>>(){

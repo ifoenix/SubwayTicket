@@ -19,5 +19,4 @@ public interface LoginService {
 
     Call<User> getUser(@Field("userName") String userName, @Field("password") String password);
 
-
 }

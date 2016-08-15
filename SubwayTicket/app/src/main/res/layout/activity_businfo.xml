@@ -22,11 +22,8 @@
             android:layout_gravity="center"/>
     </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text=""/>
     <LinearLayout
+        android:paddingTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/transparent"
@@ -140,7 +137,13 @@
 
                     />
             </TableRow>
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                />
 
         </TableLayout>
 

@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="SkyBlue">#82CAFF</color>
 
+    <color name="background_color_purple">#e5800080</color>
+
     <color name="toolbar">#81d4fa</color>
     <color name="homebackground">#FFFFFF</color>
     <color name="bd">#bdbdbd</color>
@@ -15,4 +17,5 @@
     <color name="transparent">#00000000</color>
     <color name="time">#e51e23</color>
     <color name="light_gray">#c2c7cc</color>
+    <color name="outside_color_gray">#66444444</color>
 </resources>

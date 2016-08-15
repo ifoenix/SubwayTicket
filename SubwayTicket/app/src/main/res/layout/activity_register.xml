@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_blue_dark">
-            <com.fourfive.subwayticket.mymaterialbuttons.FlatButton
+            <android.subwayticket.utils.FlatButton
                 android:onClick="bt_register_submit"
                 android:id="@+id/bt_register_submit"
                 android:layout_width="300dp"

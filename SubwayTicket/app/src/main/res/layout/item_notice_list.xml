@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/notice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="[2016-08-13]"
+        android:textSize="15sp"
+        android:textColor="@color/time"/>
+
+    <TextView
+        android:id="@+id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_toRightOf="@id/notice_time"
+        android:text="今天地铁由于天气需要延误一个小时,今天地铁由于天气需要延误一个小时,今天地铁由于天气需要延误一个小时"
+        />
+
+
+</RelativeLayout>

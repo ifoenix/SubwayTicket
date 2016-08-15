@@ -3,10 +3,16 @@ package android.subwayticket.view;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.subwayticket.MainActivity;
 import android.subwayticket.R;
+import android.subwayticket.adapter.OrderRecyclerAdapter;
+import android.subwayticket.bean.Order;
+import android.subwayticket.bean.User;
 import android.subwayticket.presenter.LoginPresenter;
+import android.subwayticket.presenter.OrderPresenter;
 import android.subwayticket.utils.BaseActivity;
 import android.subwayticket.utils.FlatButton;
+import android.subwayticket.view.IView.IOrderView;
 import android.subwayticket.view.IView.IUserView;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -18,12 +24,14 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Created by Liam on 2016/7/23.
  */
-public class LoginActivity extends BaseActivity implements View.OnClickListener,IUserView {
+public class LoginActivity extends BaseActivity implements View.OnClickListener, IUserView {
 
     private TextView mTvForgotPass;
     private TextView mRegister;
@@ -36,17 +44,21 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
     private Dialog setBottumDialog;
     private View mDialogView;
     private LoginPresenter mLoginPresenter;
+    private OrderPresenter mOrderPresenter;
+    private List<Order> list;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        mLoginPresenter = new LoginPresenter(this,LoginActivity.this);
         inintView();
         //初始化登陆按钮，为按钮添加事件
         inintLoginButton();
-        mLoginPresenter=new LoginPresenter(this,LoginActivity.this);
+
 
 
     }
@@ -60,12 +72,16 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         mBtLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               executeLogin();
-                Log.i("tag","登录成功！");
 
-                    Log.i("tag","登录....！");
-                    Intent loginIntent=new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(loginIntent);
+                executeLogin();
+
+                Log.i("tag", "登录成功！");
+
+                Log.i("tag", "登录....！");
+
+
+                Intent loginIntent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(loginIntent);
 
 
             }
@@ -85,6 +101,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         mRegister.setOnClickListener(this);
 
 
+
+
     }
 
 
@@ -98,7 +116,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             case R.id.bt_login_findpass:
 
                 setBottumDialog.dismiss();
-                Intent findpassIntent =new Intent(LoginActivity.this,FindPasswordActivity.class);
+                Intent findpassIntent = new Intent(LoginActivity.this, FindPasswordActivity.class);
                 startActivity(findpassIntent);
                 break;
             case R.id.bt_login_phonelogin:
@@ -110,8 +128,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 setBottumDialog.dismiss();
                 break;
             case R.id.tv_login_register:
-                Intent registerIntent =  new Intent();
-                registerIntent.setClass(LoginActivity.this,RegisterActivity.class);
+                Intent registerIntent = new Intent();
+                registerIntent.setClass(LoginActivity.this, RegisterActivity.class);
                 startActivity(registerIntent);
                 break;
         }
@@ -160,12 +178,18 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     @Override
     public void login(String userName, String password) {
-        mLoginPresenter.userLogin(userName,password);
+        mLoginPresenter.userLogin(userName, password);
     }
-    public void executeLogin(){
-       String userName=mEtAccount.getText().toString();
-       String password=mEtPass.getText().toString();
-        login(userName,password);
+
+
+
+    public void executeLogin() {
+        String userName = mEtAccount.getText().toString();
+        String password = mEtPass.getText().toString();
+        login(userName, password);
+
+
 
     }
+
 }

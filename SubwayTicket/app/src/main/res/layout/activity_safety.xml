@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全须知"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:text="1.避开重要的上下班高峰期。每次的上下班时间，地铁上非常的拥挤，有些需要等很久才能挤上车，或着需下车的出不来。如果您是出外逛街的尽量避开这些时间段，上班的人员选择早上提前半小时出门、下班的延期半小时乘坐地铁。\n
+2.行李物品保管好。一般性的有人会把袋子、包包什么的落地铁上，还有可能遇上小偷。靠门边位置的人员尤其提高警惕保管好自己的物品。\n
+3.楼梯行走注意。拥挤的的时候，首先还是尽量选择乘走楼梯，少成电梯。有老人拎很重行李的，或抱小孩的乘客、或者孕妇之类的尽量跟他们保持安全距离，上楼梯时不要走他们后面，下楼时不要走在他们前面，这样不至于此类人群中途跌倒你来不及应对，直接踩上或者摔一批人。尽量紧靠扶梯、或延墙走，避免拥挤被踩踏。或者等这批人走得才不多了，再上楼梯。\n
+4.地铁中部走。拥挤的时候，如果你没有座位，尽量站在车箱中部，避免上下车拥挤。如果因为拥挤没有办法走到车厢中部位置，尽量站在两边门的中部位置。如果你实在没有办法，只能站在车门位置，一定要看准哪边门将要打开和关闭，千万不能靠在上面，也不能站在门中心，否则会被上下车的人挤来挤去，一定要靠着门边背对门站好。如果实在没地方站就不要上地铁车上，以免夹在安全门和地铁门之间。\n
+5.穿戴。现在包括女性朋友们的长头发，长裙、小包包会卡在一门之外，这些其实容易产生安全隐患。\n
+6.选择其他交通工具。这里尤其是小孩和孕妇发现地铁非常拥挤时，最好选其他交通工具，以免发生意外。\n
+7.服从地铁工作人员的管理，发生安全事故时需要及时跟他们反馈。"/>
+    </ScrollView>
+</LinearLayout>

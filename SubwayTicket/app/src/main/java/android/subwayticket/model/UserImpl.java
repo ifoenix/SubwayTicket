@@ -4,8 +4,11 @@ package android.subwayticket.model;
 
 import android.subwayticket.bean.User;
 import android.subwayticket.bean.UserBean;
+import android.subwayticket.constant.Constant;
 import android.subwayticket.model.IModel.IUserModel;
 import android.subwayticket.net.LoginService;
+import android.util.Log;
+import android.widget.Toast;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -26,23 +29,27 @@ public class UserImpl implements IUserModel {
            @Override
            public void call(Subscriber<? super User> subscriber) {
                Retrofit retrofit=new Retrofit.Builder().
-                       baseUrl("http://192.168.1.146:8080").
+                       baseUrl(Constant.BASE_URL).
                        addConverterFactory(GsonConverterFactory.create()).
                        addCallAdapterFactory(RxJavaCallAdapterFactory.create()).
                        build();
 
-               Call<UserBean> userCall=retrofit.
+               Call<User> userCall=retrofit.
                        create(LoginService.class).
                        getUser(userName,password);
                User user=new User();
                try{
-                   user=userCall.execute().body().getUser();
+                   user=userCall.execute().body();
+                   Constant.userID=user.getUserID();
 
-                   subscriber.onNext(user);
+                   Log.i("tag", user.toString());
+
+
+
                }catch (Exception e){
                    e.printStackTrace();
                }
-
+               subscriber.onNext(user);
                subscriber.onCompleted();
            }
        });

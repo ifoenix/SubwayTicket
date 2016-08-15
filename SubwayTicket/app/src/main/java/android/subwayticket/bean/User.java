@@ -1,13 +1,26 @@
 package android.subwayticket.bean;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Zach on 2016/8/12.
  */
 public class User {
+    @SerializedName("userID")
+    private int userID;
+    @SerializedName("userName")
     private String userName;
+    @SerializedName("password")
     private String password;
-    private String msg;
-    private String abc;
+
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
 
     public String getUserName() {
         return userName;
@@ -25,21 +38,13 @@ public class User {
         this.password = password;
     }
 
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
 
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
+                "userID=" + userID +
+                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", msg='" + msg + '\'' +
                 '}';
     }
-
 }

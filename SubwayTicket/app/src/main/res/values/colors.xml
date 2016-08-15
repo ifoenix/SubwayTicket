@@ -13,4 +13,6 @@
     <color name="subtitle">#bdbdbd</color>
     <color name="white">#ffffff</color>
     <color name="transparent">#00000000</color>
+    <color name="time">#e51e23</color>
+    <color name="light_gray">#c2c7cc</color>
 </resources>

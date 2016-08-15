@@ -2,6 +2,7 @@ package android.subwayticket.net;
 
 
 
+import android.subwayticket.bean.User;
 import android.subwayticket.bean.UserBean;
 
 import retrofit2.Call;
@@ -15,6 +16,8 @@ import retrofit2.http.POST;
 public interface LoginService {
     @FormUrlEncoded()
     @POST("/subwayticket/login.do")
-   // @GET("/subwayticket/login.do")
-    Call<UserBean> getUser(@Field("userName") String userName, @Field("password") String password);
+
+    Call<User> getUser(@Field("userName") String userName, @Field("password") String password);
+
+
 }

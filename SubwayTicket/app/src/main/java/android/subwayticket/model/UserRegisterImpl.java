@@ -4,6 +4,7 @@ package android.subwayticket.model;
 
 import android.subwayticket.bean.User;
 import android.subwayticket.bean.UserBean;
+import android.subwayticket.constant.Constant;
 import android.subwayticket.model.IModel.IUserRegisterModel;
 import android.subwayticket.net.RegisterService;
 
@@ -25,7 +26,7 @@ public class UserRegisterImpl implements IUserRegisterModel {
             @Override
             public void call(Subscriber<? super User> subscriber) {
                 Retrofit retrofit=new Retrofit.Builder().
-                        baseUrl("http://192.168.1.146:8080").
+                        baseUrl(Constant.BASE_URL).
                         addConverterFactory(GsonConverterFactory.create()).
                         addCallAdapterFactory(RxJavaCallAdapterFactory.create()).
                         build();

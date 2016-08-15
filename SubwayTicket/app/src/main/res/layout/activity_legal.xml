@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相关法规"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:text="一、地铁乘客进站前及站内通行注意事项请穿着舒适、防滑的鞋子，尽量不要穿着高跟鞋、拖鞋及状况不良的鞋子进站乘车。\n
+地铁乘客进站前请注意出入口的整体设计布局，防止踏空或与玻璃围墙发生碰撞，严禁翻越护栏。\n
+注意站内摆放的各类安全告示牌，例如“小心地滑”、“正在维修”等。\n
+站内通行时请注意地面状况，严禁奔跑、追逐。\n
+严禁在车站及车厢内吸烟、吐痰、丢弃果皮杂物。\n
+特殊情况时，地铁乘客请听从工作人员的指挥，到指定地点候车或出站。\n
+二、地铁乘客候车注意事项请关注列车行驶方向，以免乘错车。\n
+候车时请勿越出黄色安全线，地铁乘客按箭头方向排队候车，先下后上，不要推挤。\n
+手或身体请勿扶靠屏蔽门/安全门。\n
+地铁乘客如跌落物品至轨道，请联系工作人员拾取。\n
+地铁乘客尽量避免到人潮拥挤的地方候车，身体不适或有困难时请与工作人员联系。\n
+如遇紧急情况，地铁乘客请按下紧急停车按钮并通知工作人员。\n
+在任何情况下，地铁乘客严禁擅自进入轨道。\n
+三、列车运行过程注意事项请留意自己的随身物品，以防丢失。\n
+地铁乘客上车后请坐好，站立时请紧握吊环或立柱。\n
+列车运行过程中，地铁乘客请勿随意走动，以免发生意外。\n
+禁止倚靠车门，并确保手和手指远离车身与车门之间的空隙。\n
+若感身体不适，请在下一站下车，或向车站工作人员求助。\n
+在列车内发生紧急事件时，请保持镇静，地铁乘客听从工作人员指挥，必要时使用车厢内的对讲系统与司机联系。\n
+四、列车到站注意事项请注意车厢内广播及报站提示，地铁乘客提前做好下车的准备。\n
+"/>
+    </ScrollView>
+</LinearLayout>

@@ -4,10 +4,12 @@ package android.subwayticket.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.subwayticket.R;
+import android.subwayticket.constant.Constant;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TableRow;
+import android.widget.Toast;
 
 /**
  * Created by Zach on 2016/7/29.
@@ -25,7 +27,7 @@ public class BusInfomationActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_businfo);
-
+        Toast.makeText(this, Constant.userID+"",Toast.LENGTH_LONG).show();
 //        ButterKnife.bind(this);
 //
 //        mTopBar.setOnTopBarClickListener(new TopBar.OnTopBarClickListener() {

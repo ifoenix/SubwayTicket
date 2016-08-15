@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <TableLayout
+        android:id="@+id/table_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/card_whole">
+
+        <TableRow
+            android:id="@+id/tablerow_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:text="账号与安全"
+                />
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/image_account"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TableRow
+            android:id="@+id/tablerow_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:text="分享"
+                android:gravity="center"
+                />
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/card_whole">
+
+        <TableRow
+            android:id="@+id/tablerow_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:text="推送消息设置"
+                />
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/image_message"
+                android:layout_width="20dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_height="20dp"
+                android:onClick="click"
+                android:layout_column="10" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:text="免打扰模式"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch_button"
+                style="@style/MD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="16dp"
+                android:layout_column="44" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/table_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/card_whole">
+
+        <TableRow
+            android:id="@+id/tablerow_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:text="反馈与帮助"
+                />
+            <TextView android:layout_width="match_parent"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/image_help"
+                android:layout_width="20dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:layout_height="20dp"
+                android:onClick="click"
+                />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TableRow
+            android:id="@+id/tablerow_aboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:text="关于我们"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+
+                />
+            <ImageView
+                android:id="@+id/image_changeNumber"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_gravity="center"
+                android:layout_marginEnd="0dp"
+                android:onClick="click"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

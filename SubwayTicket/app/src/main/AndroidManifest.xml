@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.MainActivity"
+            android:name=".MainActivity"
 
              >
             <intent-filter>
@@ -18,23 +18,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.WelcomeActivity">
+
+        </activity>
 
         <activity android:name=".view.LoginActivity"></activity>
         <activity android:name=".view.RegisterActivity"></activity>
         <activity android:name=".view.FindPasswordActivity"></activity>
-        <activity android:name=".view.NewPasswordActivity"/>
-        <activity android:name=".view.NoticeActivity"></activity>
+        <activity android:name=".view.OrderDetailActivity"></activity>
         <activity android:name=".view.OperGuideActivity"></activity>
-        <activity android:name=".view.OrderActivity"></activity>
+        <activity android:name=".view.OrderActivity">
+
+        </activity>
         <activity android:name=".view.PersonalInfoActivity"></activity>
         <activity android:name=".view.SettingsActivity"></activity>
         <activity android:name=".view.SiteActivity"></activity>
-        <activity android:name=".view.LineActivity"></activity>
         <activity android:name=".view.BuyTicketActivity"></activity>
         <activity android:name=".view.CheckTicketActivity"></activity>
         <activity android:name=".view.LegalActivity"></activity>
         <activity android:name=".view.SafetyActivity"></activity>
         <activity android:name=".view.BusInfomationActivity"></activity>
+        <activity android:name=".view.NoticeDetailActivity"></activity>
+
+        <activity android:name=".view.GuideActivity"></activity>
+
 
 
     </application>

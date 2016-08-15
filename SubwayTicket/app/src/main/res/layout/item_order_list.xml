@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_order_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起点站 ："
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_order_start"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="大学城南"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:textColor="#ff0000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_order_terminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终点站 ："
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_order_terminal"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="大学城南"/>
+
+    </LinearLayout>
+
+</LinearLayout>

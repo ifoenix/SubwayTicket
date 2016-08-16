@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付订单"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/tv_pay_startstation"
+            android:lines="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/buyticket_arrive"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_pay_endstation"
+            android:lines="1"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_pay_arr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </LinearLayout>
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/iv_pay_icon"
+            android:layout_toRightOf="@+id/tv_pay_endstation"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/money"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_pay_money"
+            android:paddingTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_pay_icon"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择支付方式："
+        android:textSize="20sp"
+        android:padding="30dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+        <TableLayout
+
+            android:id="@+id/table_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+            <TableRow
+                android:id="@+id/tr_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/wechatpay"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                />
+
+            <TableRow
+                android:id="@+id/tr_checkticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:padding="16dp"
+                    android:src="@drawable/alipay"/>
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

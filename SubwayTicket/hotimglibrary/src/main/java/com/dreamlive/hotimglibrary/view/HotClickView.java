@@ -18,6 +18,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.dreamlive.hotimglibrary.R;
 import com.dreamlive.hotimglibrary.entity.HotArea;
 import com.dreamlive.hotimglibrary.utils.LogUtils;
@@ -220,10 +222,10 @@ public class HotClickView extends View {
             canvas.drawRect(mEmptyRectF, paint);
         }
         if (lastClick != null) {
-            float[] curMove = getCurrentMoveXY();
-            float scale = getCurrentScale();
-            paint.setColor(Color.RED);
-            canvas.drawCircle((lastClick.getX() - curMove[0]) / scale, (lastClick.getY() - curMove[1]) / scale, 10, paint);
+//            float[] curMove = getCurrentMoveXY();
+//            float scale = getCurrentScale();
+//            paint.setColor(Color.RED);
+//            canvas.drawCircle((lastClick.getX() - curMove[0]) / scale, (lastClick.getY() - curMove[1]) / scale, 10, paint);
         }
     }
 
@@ -690,8 +692,13 @@ public class HotClickView extends View {
         reset();
         mFitXY = fitXY;
         mRootArea = XMLUtils.getInstance(mContext).readDoc(hotFileStream);
-        mSourceBitmap = BitmapFactory.decodeStream(hotImgStream);
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = false;
+        options.inSampleSize = 1;
+        mSourceBitmap = BitmapFactory.decodeStream(hotImgStream, null,  options);/*BitmapFactory.decodeStream(hotImgStream);*/
         resetFiles();
+
+
     }
 
     /**

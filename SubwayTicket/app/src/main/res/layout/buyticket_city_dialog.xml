@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/city_beijing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="北京"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_tianjin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="天津"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_shanghai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="上海"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_guangzhou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="广州"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_shenzhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="深圳"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_nanjing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="南京"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_xianggang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="香港"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_taibei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="台北"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/city_gaoxiong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:text="高雄"
+        android:textSize="20sp" />
+
+</LinearLayout>

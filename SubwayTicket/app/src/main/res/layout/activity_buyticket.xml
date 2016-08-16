@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -16,7 +15,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,21 +28,58 @@
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:paddingLeft="10dp"
+        >
 
         <TextView
+            android:textSize="18sp"
             android:id="@+id/buyticket_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="广州" />
 
         <ImageView
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/startpoint" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/et_buyticket_startstation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="20"
+            android:maxLength="20" />
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/endpoint" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/et_buyticket_endstation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxEms="20"
+            android:maxLength="20" />
+
     </LinearLayout>
 
     <com.dreamlive.hotimglibrary.view.HotClickView
@@ -67,102 +103,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/start_station" />
-
-                <EditText
-                    android:id="@+id/et_buyticket_startstation"
-                    android:ellipsize="end"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:lines="1"
-                    android:maxEms="20"
-                    android:maxLength="20"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/end_station" />
-
-                <EditText
-                    android:id="@+id/et_buyticket_endstation"
-                    android:maxLength="20"
-                    android:maxEms="20"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:lines="1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="5dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/money" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text=":"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/tv_buyticket_money"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:lines="1"
-                    android:maxLength="8"/>
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingBottom="10dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@android:color/holo_blue_bright"
-            android:gravity="center">
-
-            <android.subwayticket.utils.FlatButton
-                android:id="@+id/bt_buyticket_submit"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/holo_blue_bright"
-                android:gravity="center"
-                android:text="购   买"
-                android:textColor="@android:color/holo_blue_dark"
-                android:textSize="18dp" />
-        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
